@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<root>
+    <CommunityInfo memberName="CommunityInfo">
+        <Version value="0" />
+        <MergeSystem value="1" />
+        <TrackingActivation value="65535" />
+        <PingLimit value="400" />
+        <LevelIncrease value="1" />
+        <RegionActivate value="1" />
+        <LanguageActivate value="1" />
+    </CommunityInfo>
+</root>

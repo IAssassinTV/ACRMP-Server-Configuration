@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<GameMode Name="CORRUPTION" EngineName="infection" idGameMode="16" SessionType="0" MinPlayers="4" MaxPlayers="8" TopPlayers="8" IdMetaSession="-1" IsTeamMode="true" IsFullTeamMode="false" CanJoinInGame="true" CanJoinWithGroup="false" PrivateMinPlayers="3" TemplarGrade="Free" SearchExpirationTime="10.0f" MaxSessionToTry="5" normalBlacklistedSessionTime="40" SearchStrategy="1" MaxNumberOfTeams="9" TakeLeadVoiceIgnoreDuration="10.f" SpawnRuleDeath="7" SpawnRuleInit="7" PlayerThresholdForEndSession="2" PlayerPerTeamThresholdForEndSession="0" ScoreList="CORRUPTION">
+    <GBrick_AbilityManager Start="ENGINE_AbilitySetSelectionDone" Stop="XML_EndGame,ENGINE_KillEvent_LocalPlayerSuicided,ENGINE_KillEvent_OtherPlayerKilledLocalPlayer,ENGINE_HumiliatedSuicide,XML_StartInterround" CoolDownTimer="30" SlotOne="8" SlotTwo="13" SlotThree="3" />
+    <GBrick_AssassinFeedback Start="XML_InGame" Stop="XML_EndGame" ShowChaser="true" ShowFX="true" ShowArrow="true" ShowArrowOffscreen="false" HideFXifArrow="false" TargetFeedbackHasPriority="false" DisplayDebug="false" ShowThreateningArrow="true" ShowThreateningThroughWalls="false" ThreateningOutTime="3.0f" />
+    <GBrick_AttackFeedback Start="XML_InGame" Stop="XML_EndGame" DisplayDebug="false" />
+    <GBrick_BloodBath Start="XML_InGame" Stop="XML_EndGame" />
+    <GBrick_CheckNumberOfPlayers Start="ENGINE_PlayerRemoved,XML_GameStateStartedDelayed" OnFinished="XML_NoMoreEnoughPlayers" MessageBoxTimeOut="8000" />
+    <GBrick_CrowdSkins PlayerSkinRatio="0.1125f" InfectedSkinRatio="0.15f" />
+    <GBrick_Delay Start="ENGINE_GameModeInitialized" OnFinished="XML_SpawnInWhiteRoom" DelayDuration="0.f" />
+    <GBrick_Delay Start="XML_GameStateEnded" OnFinished="XML_GameStateEnded2sec" DelayDuration="2.f" />
+    <GBrick_Delay Start="XML_GameStateStarted" OnFinished="XML_GameStateStartedDelayed" DelayDuration="5.f" />
+    <GBrick_Delay Start="XML_InGame" OnFinished="XML_InGame4sec" DelayDuration="4.f" />
+    <GBrick_Delay Start="XML_InGame" OnFinished="XML_InGameFadeDone" Cancel="XML_EndGame" DelayDuration="6.f" />
+    <GBrick_Delay Start="XML_InitGameplay" OnFinished="XML_GameplayIsInit" DelayDuration="0.f" />
+    <GBrick_Delay Start="XML_InitGameplaySoon" OnFinished="XML_InitGameplay" DelayDuration="3.f" />
+    <GBrick_Delay Start="XML_RespawnRestart" OnFinished="XML_RespawnFadeDone" DelayDuration="1.f" />
+    <GBrick_Delay Start="XML_StartRound" OnFinished="XML_InGameFadeDone" DelayDuration="4.5f" />
+    <GBrick_Delay Start="XML_StartRound" OnFinished="XML_StartRound1" DelayDuration="1.f" />
+    <GBrick_EndGameScores Start="XML_RankingSent" Stop="ENGINE_MenuRestart" OnFinished="XML_ScoresSent" OnRestart="XML_Restart" MaxTime="45" />
+    <GBrick_Escape Start="XML_InfectedReady" Stop="XML_EndGame" StartChaseAtFullThreat="true" StartChaseOnNPCKill="false" FailChaseOnNPCKill="true" NPCKillMattersDistance="1000.0f" AllowStartChaseWhenChased="true" StayBlueUntilUnblend="true" ScoreOnHumiliation="true" BreakContractOnHumiliation="true" tempStatusText="false" DisplayDebug="false" />
+    <GBrick_ExtendedHud Start="XML_InGame" Stop="XML_EndGame" />
+    <GBrick_FeedbackPool Start="ENGINE_GameModeInitialized" Stop="XML_GameStateEndedDelayed" NbInteractionFU="6" NbOnMeFU="1" NbTrap="4" NbVision="8" NbPerk="8" NbGameplayArrow="7" NbPoison="1" NbDecoyFU="1" NbBodyguardFU="1" NbFinishKillTarget="4" NbMissedTarget="8" NbTeleportDest="1" NbHack="2" />
+    <GBrick_FeedbackPool Start="ENGINE_GameModeInitialized" Stop="XML_GameStateEndedDelayed" NbTeammateFU="7" NbPoison="6" />
+    <GBrick_GameStarter Start="ENGINE_GameModeInitialized" OnPlayersReady="XML_InitGameplaySoon" OnLocalSkinsAndCrowdReady="XML_SkinCrowdOK" OnPlayersSkinsAndCrowdReady="XML_EnoughFullReady" NeedsMinPlayersReady="true" NeedsAllPlayersReady="false" DisplayDebug="false" />
+    <GBrick_GameState SetStarted="XML_ModeCanStart" SetEnded="XML_GameOver,XML_NoMoreEnoughPlayers,XML_KnockoutEnd" OnStarted="XML_GameStateStarted" OnEnded="XML_GameStateEnded" DisplayDebug="false" />
+    <GBrick_GetRanking Start="XML_InGame" />
+    <GBrick_HudFeedback Start="XML_InGame" Stop="XML_EndGame" />
+    <GBrick_InfectionLoop Start="XML_SkinSelectionStarted" Stop="XML_GameStateEnded" NewRound="XML_StartRound" SwitchInfected="XML_StartInterround" OnInfectedReady="XML_InfectedReady" OnFinished="XML_SuddenDeath" />
+    <GBrick_InteractionManager Start="XML_InGame" Stop="XML_EndGame" CanTarget_FutureSight="true" />
+    <GBrick_LogicAndOnEvent Start="XML_GameplayIsInit,XML_EnoughFullReady" OnFinished="XML_ModeCanStart" nbStartEvent="2" />
+    <GBrick_LogicAndOnEvent Start="XML_GameplayIsInit,XML_PlayerReady" OnFinished="XML_SpawnReady" nbStartEvent="2" />
+    <GBrick_LogicAndOnEvent Start="XML_InGame,XML_GameStateEnded" OnFinished="XML_PlayerCanGoEndGame" nbStartEvent="2" />
+    <GBrick_LogicAndOnEvent Start="XML_InGame4sec,XML_GameStateEnded2sec" OnFinished="XML_GameStateEndedDelayed" nbStartEvent="2" />
+    <GBrick_LogicAndOnEvent Start="XML_SkinCrowdOK,XML_PlayerReady" OnFinished="PlayerFullReady" nbStartEvent="2" />
+    <GBrick_LogicAndOnEvent Start="XML_SpawnOnMapDone,XML_PlayerFullReady,XML_EnoughFullReady,XML_InfectedReady" OnFinished="XML_PlayerCanGoInGame" nbStartEvent="4" />
+    <GBrick_MaintainContract Start="XML_GameStateStarted" Select="ENGINE_KillEvent,ENGINE_PlayerRemoved,ENGINE_EndOfEscape,ENGINE_EnginePlayerInGame" Stop="XML_GameStateEnded" />
+    <GBrick_MapVote Start="ENGINE_StartMapVote" OnFinished="XML_VoteDone" />
+    <GBrick_MessageLog DebugDisplay="1" TimeBeforeFadeOut="3" TimeFadeOut="3" />
+    <GBrick_MidGameScores Start="XML_InGame,XML_SendScoreForMenu" />
+    <GBrick_MidGameScores Start="XML_StartInterround" OnFinished="XML_MidScoresSent" />
+    <GBrick_MidGameScoresNotifier Start="XML_SpawnedInWhiteRoom,XML_Restart" Stop="XML_EndGame" OnRestart="XML_SendScoreForMenu" />
+    <GBrick_MultiTagFeedback Start="XML_InGame" Stop="XML_EndGame" DisplayDebug="false" />
+    <GBrick_PlayerInfo Start="XML_InGame" Stop="XML_EndGame" DisplayContractOnMe="true" DisplayRanking="true" />
+    <GBrick_PlayerListExtended Start="XML_SkinSelectionStarted" Stop="XML_EndGame" />
+    <GBrick_PlayerReady SetTeamSelection="XML_TeamSelectionStarted" SetSkinSelection="XML_SkinSelectionStarted" SetReady="XML_GoToRoundIntro" OnReady="XML_PlayerReady" SetSkinsAndCrowdReady="PlayerFullReady" OnSkinsAndCrowdReady="XML_PlayerFullReady" SetInGame="XML_PlayerCanGoInGame" OnInGame="XML_InGame" SetEndGame="XML_PlayerCanGoEndGame" OnEndGame="XML_EndGame" WaitingVoiceTime2="60" />
+    <GBrick_PoisonFeedback Start="XML_InGame" Stop="XML_EndGame" DisplayDebug="false" />
+    <GBrick_RequestRespawnWhileHumiliated Start="XML_InGame" Stop="XML_EndGame" YButtonInterval="5.0f" TimeToBlinkFirst="1.0f" TimeToBlinkLast="1.0f" BlinkIntervalFirst="0.2f" BlinkIntervalLast="0.1f" />
+    <GBrick_Respawn Start="ENGINE_LocalPlayerEndOfDeath" OnFinished="XML_RespawnRestart" RespawnTime="0" SpawnPointType="0" UseDeathRespawnRule="true" RandomSkin="false" SpawnInWhiteRoom="false" />
+    <GBrick_Respawn Start="XML_InfectedReady" RespawnTime="0" SpawnPointType="2" SpawnPointRule="16" RandomSkin="false" SpawnInWhiteRoom="false" AllowedAsFirstSpawn="false" PlayRespawnSound="false" />
+    <GBrick_Respawn Start="XML_SpawnInWhiteRoom" OnFinished="XML_SpawnedInWhiteRoom" RespawnTime="0" RandomSkin="false" SpawnInWhiteRoom="true" PlayRespawnSound="false" />
+    <GBrick_Respawn Start="XML_SpawnReady" OnFinished="XML_SpawnOnMapDone" RespawnTime="0" SpawnPointType="0" UseInitRespawnRule="true" RandomSkin="false" SpawnInWhiteRoom="false" PlayRespawnSound="false" />
+    <GBrick_Round Start="XML_InitGameplay" Stop="XML_GameStateEnded" Restart="XML_TimerEnded" NotifyHUD="XML_InGame" NotifyScoreSent="XML_MidScoresSent" OnFinished="XML_GameOver" OnStarted="XML_StartInterround" OnRestart="XML_StartRound" NumberOfRounds="3" ResetKillerLoop="false" WaitForTeamLoop="false" InterroundDuration="15.f" />
+    <GBrick_ScoreChase IsTeamScore="false" MetaScore="0" />
+    <GBrick_ScoreCommon IsTeamScore="false" MetaScore="0" />
+    <GBrick_ScoreKill IsTeamScore="false" UseCote="false" MetaScore="0" AllowFirstBlood="false" />
+    <GBrick_ScoreSession BonusKillsAverage="300" BonusPodium="200" BonusSurvivor="400" BonusUntouchable="1000" AllowedDelay="60" />
+    <GBrick_SendRanking Start="XML_GameStateEndedDelayed" OnFinished="XML_RankingSent" />
+    <GBrick_SkinSelection Start="XML_SpawnedInWhiteRoom" OnStarted="XML_SkinSelectionStarted" OnFinished="XML_GoToRoundIntro" AllowedWhenEnded="true" DisplayDebug="false" />
+    <GBrick_TargetFeedback Start="XML_InGame,XML_StartRound" Stop="XML_EndGame,XML_StartInterround" DisplayDebug="false" ShowMainEmpty="false" SecRadarRangeScale="0.66f" AcquireTargetDistance="7.0f" />
+    <GBrick_TargetInfo Start="XML_StartRound1" Stop="XML_StartInterround,XML_EndGame" />
+    <GBrick_TeammateFeedback Start="XML_InGameFadeDone" Stop="XML_EndGame,XML_StartInterround" DisplayDebug="false" CanStartWhileDead="false" />
+    <GBrick_Timer Start="XML_InGame,XML_StartRound" Stop="ENGINE_AllInfected" Cancel="XML_NoMoreEnoughPlayers" Show="XML_InGame,XML_StartRound" Hide="XML_EndGame,XML_StartInterround" SetDuration="XML_SuddenDeath" OnFinished="XML_TimerEnded" GameDuration="240" Play30sVoice="true" Play1mnVoice="false" />
+    <GBrick_UninfectedScore Start="XML_InGame,XML_StartRound" OnSuddenDeath="XML_SuddenDeath" Stop="XML_EndGame,XML_RestartRound" ProximityInterval="5.0f" ProximityDistance="20.0f" SuddenDeathTimeInterval="5.0f" TimeInterval="5.0f" />
+    <GBrick_VoiceChatRules FullVoiceChat="ENGINE_GameModeInitialized,XML_GameStateEnded" CustomVoiceChat="XML_GameStateStarted" Custom_RuleInfection="true" />
+</GameMode>

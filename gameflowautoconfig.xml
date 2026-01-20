@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<root>
+    <GameFlowAutoConfig memberName="GameFlowAutoConfig">
+        <m_autoModeActivated value="false" />
+        <m_autoTestActivated value="false" />
+        <m_privateCode value="-1" />
+        <m_forceOfflineMode value="false" />
+        <m_currentPlaylist value="12" />
+        <m_currentGameMode value="4" />
+        <m_minNumberofPlayer value="-1" />
+        <m_playerThreshshold value="-1" />
+        <m_gameDuration value="-1" />
+        <m_currentMap value="3484289820" />
+        <m_preferedSkin value="-1" />
+        <m_sessionType value="0" />
+    </GameFlowAutoConfig>
+</root>

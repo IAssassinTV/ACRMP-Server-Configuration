@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+<Playlists>
+    <Playlist id="7" preference="1" engineName="!EASY DEATHMATCH" oasisId="338630" description="337424" groupSize="8" hidden="false" dlcId="0" leaderboardId="1" statutFlag="1" private="false" devPlaylist="false">
+        <modes>
+            <mode id="1" />
+        </modes>
+        <maps>
+            <map id="3484289820" />
+            <map id="3731030990" />
+            <map id="3731030991" />
+            <map id="1982001666" />
+            <map id="1292044030" />
+            <map id="1292044042" />
+            <map id="1292044052" />
+            <map id="1960863964" />
+            <map id="1956467704" />
+            <map id="2479111157" />
+            <map id="2479111774" />
+            <map id="2369490714" />
+            <map id="1411302244" />
+            <map id="1411302260" />
+            <map id="1411302240" />
+            <map id="1411302264" />
+            <map id="1411302281" />
+        </maps>
+    </Playlist>
+    <Playlist id="5" preference="2" engineName="!Free for all" oasisId="335407" description="335460" groupSize="8" hidden="false" dlcId="0" leaderboardId="1" statutFlag="0" private="false" devPlaylist="false">
+        <modes>
+            <mode id="4" />
+            <mode id="9" />
+            <mode id="6" />
+            <mode id="15" />
+            <mode id="16" />
+        </modes>
+        <maps>
+            <map id="3484289820" />
+            <map id="3731030990" />
+            <map id="3731030991" />
+            <map id="1982001666" />
+            <map id="1292044030" />
+            <map id="1292044042" />
+            <map id="1292044052" />
+            <map id="1960863964" />
+            <map id="1956467704" />
+            <map id="2479111157" />
+            <map id="2479111774" />
+            <map id="2369490714" />
+            <map id="1411302244" />
+            <map id="1411302260" />
+            <map id="1411302240" />
+            <map id="1411302264" />
+            <map id="1411302281" />
+        </maps>
+    </Playlist>
+    <Playlist id="4" preference="3" engineName="!Team Objective" oasisId="335408" description="335424" groupSize="8" hidden="false" dlcId="0" leaderboardId="1" statutFlag="2" private="false" devPlaylist="false">
+        <modes>
+            <mode id="12" />
+            <mode id="14" />
+            <mode id="2" />
+            <mode id="7" />
+        </modes>
+        <maps>
+            <map id="3484289820" />
+            <map id="3731030990" />
+            <map id="3731030991" />
+            <map id="1982001666" />
+            <map id="1292044030" />
+            <map id="1292044042" />
+            <map id="1292044052" />
+            <map id="1960863964" />
+            <map id="1956467704" />
+            <map id="2479111157" />
+            <map id="2479111774" />
+            <map id="2369490714" />
+            <map id="1411302244" />
+            <map id="1411302260" />
+            <map id="1411302240" />
+            <map id="1411302264" />
+            <map id="1411302281" />
+        </maps>
+    </Playlist>
+    <Playlist id="6" preference="0" engineName="!Private" oasisId="336435" description="337395" groupSize="8" hidden="false" dlcId="0" leaderboardId="0" statutFlag="0" private="true" devPlaylist="false">
+        <modes>
+            <mode id="11" />
+            <mode id="4" />
+            <mode id="12" />
+            <mode id="1" />
+            <mode id="9" />
+            <mode id="6" />
+            <mode id="15" />
+            <mode id="16" />
+            <mode id="14" />
+            <mode id="2" />
+            <mode id="7" />
+        </modes>
+        <maps>
+            <map id="1292044030" />
+            <map id="1960863964" />
+            <map id="1292044042" />
+            <map id="1411302240" />
+            <map id="1292044052" />
+            <map id="1411302281" />
+            <map id="1411302264" />
+            <map id="1411302260" />
+            <map id="1956467704" />
+            <map id="1411302244" />
+            <map id="3484289820" />
+            <map id="2479111157" />
+            <map id="3731030990" />
+            <map id="2479111774" />
+            <map id="1982001666" />
+            <map id="2369490714" />
+            <map id="3731030991" />
+        </maps>
+    </Playlist>
+    <Playlist id="8" preference="0" engineName="!DLC" oasisId="335411" description="335463" groupSize="8" hidden="false" dlcId="2" leaderboardId="1" statutFlag="0" private="false" devPlaylist="false">
+        <modes>
+            <mode id="4" />
+            <mode id="12" />
+            <mode id="1" />
+            <mode id="9" />
+            <mode id="6" />
+            <mode id="15" />
+            <mode id="16" />
+            <mode id="14" />
+            <mode id="2" />
+            <mode id="7" />
+        </modes>
+        <maps>
+            <map id="1935697663" />
+            <map id="986992185" />
+            <map id="986992189" />
+            <map id="3731030987" />
+            <map id="3731030989" />
+            <map id="3738171798" />
+            <map id="1411301732" />
+            <map id="2479111139" />
+            <map id="2479111803" />
+        </maps>
+    </Playlist>
+    <Playlist id="9" preference="0" engineName="!Private DLC" oasisId="337394" description="337396" groupSize="8" hidden="false" dlcId="2" leaderboardId="1" statutFlag="0" private="true" devPlaylist="false">
+        <modes>
+            <mode id="11" />
+            <mode id="4" />
+            <mode id="12" />
+            <mode id="1" />
+            <mode id="9" />
+            <mode id="6" />
+            <mode id="15" />
+            <mode id="16" />
+            <mode id="14" />
+            <mode id="2" />
+            <mode id="7" />
+        </modes>
+        <maps>
+            <map id="1935697663" />
+            <map id="986992185" />
+            <map id="986992189" />
+            <map id="3731030987" />
+            <map id="3731030989" />
+            <map id="3738171798" />
+            <map id="1411301732" />
+            <map id="2479111139" />
+            <map id="2479111803" />
+        </maps>
+    </Playlist>
+    <Playlist id="11" preference="0" engineName="TUTOS_HIDDEN" oasisId="0" description="0" groupSize="1" hidden="true" dlcId="0" leaderboardId="1" statutFlag="0" private="true" devPlaylist="false">
+        <modes>
+            <mode id="17" />
+            <mode id="18" />
+        </modes>
+        <maps>
+            <map id="1292044030" />
+        </maps>
+    </Playlist>
+</Playlists>

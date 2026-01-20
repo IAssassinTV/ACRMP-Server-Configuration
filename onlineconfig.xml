@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<root>
+    <OnlineConfig WaitForSkinsToLoadMap="true" UseMatchMakingNatFilter="true" DisbandTime="15" DisbandThreshold="8" DisbandMaxPlayers="3" DisbandEndMatchAddition="30" SecurityTime="120" GroupSizeMax="8" TimeToJoin="20" JoinTimeout="5000" PeerPingActivated="true">
+        <Beginner BeginnerPlayerMax="5" LevelRuleMultiplicator="2" />
+        <Playlist BeginnerPlaylist="5" BeginnerGamemode="9" DownloadContentDlcId="2" />
+        <Statistics FriendsLeagueCachetimeout="600" LeaderboardsCachetimeout="600" MinLevelForRatioLeaderboards="10" />
+        <Blacklist>
+            <Param maxsize="10" />
+            <SessionLeft timeout="35" score="-1" />
+            <BadVersion timeout="600" score="10" />
+            <SessionFull timeout="120" score="10" />
+            <JoinTimeout timeout="60" score="10" />
+            <AddMemberFailed timeout="60" score="10" />
+            <Default timeout="30" score="10" />
+        </Blacklist>
+        <PlayNow>
+            <populationStep max="100" value="1" />
+            <populationStep max="250" value="3" />
+            <populationStep max="1000" value="4" />
+            <populationStep max="10000000" value="5" />
+        </PlayNow>
+        <CommunityInfo LowToMediumThresholdComActivity="250" MediumToHighThresholdComActivity="1000" />
+        <TriParams>
+            <pingRange ping="100" score="12" />
+            <pingRange ping="200" score="8" />
+            <pingRange ping="250" score="6" />
+            <pingRange ping="300" score="4" />
+            <pingRange ping="400" score="1" />
+            <pingRange ping="-1" score="0" />
+            <sessionLevelRange levelDifference="2" score="5" />
+            <sessionLevelRange levelDifference="5" score="4" />
+            <sessionLevelRange levelDifference="10" score="3" />
+            <sessionLevelRange levelDifference="15" score="2" />
+            <sessionLevelRange levelDifference="-1" score="1" />
+            <sessionStarted scoreNotStarted="4" scoreStarted="4" scoreAlmostFinished="1" scoreFinished="0" />
+            <map scoreLoaded="10" scoreNotLoaded="1" />
+            <language scoreMatch="2" scoreDoesntMatch="1" />
+            <natType player="1" session="3" score="3" />
+            <natType player="1" session="1" score="2" />
+            <natType player="1" session="2" score="1" />
+            <natType player="2" session="2" score="3" />
+            <natType player="2" session="1" score="1" />
+            <natType player="3" session="1" score="1" />
+        </TriParams>
+    </OnlineConfig>
+</root>
