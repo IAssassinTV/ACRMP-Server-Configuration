@@ -19974,7 +19974,7 @@
                         <Duration value="3.5" />
                         <Duration value="3.8" />
                     </m_Duration>
-                    <Delay value="0.3" />
+                    <Delay value="0.65" />
                 </AbilitySmokeBomb>
             </Reference>
             <Reference propertyName="UnlockableReferenceList" classID="2713111210" objID="2308572798">
