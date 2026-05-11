@@ -6,7 +6,7 @@
         <TrackingActivation value="65535" />
         <PingLimit value="400" />
         <LevelIncrease value="1" />
-        <RegionActivate value="1" />
-        <LanguageActivate value="1" />
+        <RegionActivate value="0" />
+        <LanguageActivate value="0" />
     </CommunityInfo>
 </root>

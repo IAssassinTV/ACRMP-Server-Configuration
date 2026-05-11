@@ -28,19 +28,19 @@
             <pingRange ping="400" score="1" />
             <pingRange ping="-1" score="0" />
             <sessionLevelRange levelDifference="2" score="5" />
-            <sessionLevelRange levelDifference="5" score="4" />
-            <sessionLevelRange levelDifference="10" score="3" />
-            <sessionLevelRange levelDifference="15" score="2" />
-            <sessionLevelRange levelDifference="-1" score="1" />
+            <sessionLevelRange levelDifference="5" score="5" />
+            <sessionLevelRange levelDifference="10" score="5" />
+            <sessionLevelRange levelDifference="15" score="5" />
+            <sessionLevelRange levelDifference="-1" score="5" />
             <sessionStarted scoreNotStarted="4" scoreStarted="4" scoreAlmostFinished="1" scoreFinished="0" />
             <map scoreLoaded="10" scoreNotLoaded="1" />
             <language scoreMatch="2" scoreDoesntMatch="1" />
             <natType player="1" session="3" score="3" />
-            <natType player="1" session="1" score="2" />
-            <natType player="1" session="2" score="1" />
+            <natType player="1" session="1" score="3" />
+            <natType player="1" session="2" score="3" />
             <natType player="2" session="2" score="3" />
-            <natType player="2" session="1" score="1" />
-            <natType player="3" session="1" score="1" />
+            <natType player="2" session="1" score="3" />
+            <natType player="3" session="1" score="3" />
         </TriParams>
     </OnlineConfig>
 </root>
