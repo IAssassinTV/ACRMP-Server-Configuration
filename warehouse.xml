@@ -21239,7 +21239,7 @@
                     <m_LoseBonusAbilities Array_Size="1">
                         <Handle propertyName="LoseBonusAbilities" objID="2351491837" />
                     </m_LoseBonusAbilities>
-                    <IsEditable value="false" />
+                    <IsEditable value="true" />
                 </ProfileSet>
             </Reference>
             <Reference propertyName="UnlockableReferenceList" classID="1002420068" objID="3533800767">
@@ -21277,7 +21277,7 @@
                     <m_LoseBonusAbilities Array_Size="1">
                         <Handle propertyName="LoseBonusAbilities" objID="2527443567" />
                     </m_LoseBonusAbilities>
-                    <IsEditable value="false" />
+                    <IsEditable value="true" />
                 </ProfileSet>
             </Reference>
             <Reference propertyName="UnlockableReferenceList" classID="1002420068" objID="2660128086">
