@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Playlists>
-    <Playlist id="5" preference="2" engineName="!Free for all" oasisId="335407" description="335460" groupSize="8" hidden="false" dlcId="0" leaderboardId="1" statutFlag="0" private="false" devPlaylist="false">
+    <Playlist id="5" preference="0" engineName="!Free for all" oasisId="335407" description="335460" groupSize="8" hidden="false" dlcId="0" leaderboardId="1" statutFlag="0" private="false" devPlaylist="false">
         <modes>
             <mode id="1" />
             <mode id="4" />
@@ -38,7 +38,7 @@
             <map id="2479111803" />
         </maps>
     </Playlist>
-    <Playlist id="4" preference="3" engineName="!Team Objective" oasisId="335408" description="335424" groupSize="8" hidden="false" dlcId="0" leaderboardId="1" statutFlag="2" private="false" devPlaylist="false">
+    <Playlist id="4" preference="0" engineName="!Team Objective" oasisId="335408" description="335424" groupSize="8" hidden="false" dlcId="0" leaderboardId="1" statutFlag="2" private="false" devPlaylist="false">
         <modes>
             <mode id="12" />
             <mode id="14" />
